@@ -1,0 +1,205 @@
+@font-face
+{
+    font-family: "gara";
+    local: gara;
+    src: url(./fonts/gara.ttf);
+}
+a:link { text-decoration:none;  color:#ffffff; }
+a:visited { text-decoration:none; color:#ffffff; }
+a:active { text-decoration:none; color:#ab0000; }
+a:hover { text-decoration:none; color:#ab0000; }
+
+.teamInfo h3 {
+    clear: both;
+    padding: 17px;
+    margin-bottom: 0;
+}
+.grey {
+    filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+#varina img, #franzi img, #wanda img, #lora img, #charly img {
+    height: 80px;
+}
+.teampics img.main, #varina img.main, #franzi img.main, #wanda img.main, #lora img.main, #charly img.main {
+    height: 160px;
+}
+.boxshadow
+{
+    display: table;
+    -moz-box-shadow: 0px 0px 20px 20px #000000; /* Schatten für Firefox */
+    -webkit-box-shadow: 0px 0px 20px 20px #000000; /* Schatten für Safari, Chrome */
+    -khtml-box-shadow: 0px 0px 20px 20px #000000; /* Schatten für Konqueror */
+    box-shadow: 0px 0px 20px 20px #000000; /* Schatten für CSS3 */
+    -moz-border-radius:10px; /* Runde Ecke für Firefox */
+    -webkit-border-radius:10px; /* Runde Ecke für Safari, Chrome */
+    -khtml-border-radius:10px; /* Runde Ecke für Konqueror */
+    border-radius:10px; /* Runde Ecke für CSS3 */
+    background-color:#fffbe0;
+}
+.innershadow
+{
+    display: table;
+    -moz-box-shadow: 0px 0px 5px 0px #000000; /* Schatten für Firefox */
+    -webkit-box-shadow: 0px 0px 5px 0px #000000; /* Schatten für Safari, Chrome */
+    -khtml-box-shadow: 0px 0px 5px 0px #000000; /* Schatten für Konqueror */
+    box-shadow: 0px 0px 5px 0px #000000; /* Schatten für CSS3 */
+    -moz-border-radius:5px; /* Runde Ecke für Firefox */
+    -webkit-border-radius:5px; /* Runde Ecke für Safari, Chrome */
+    -khtml-border-radius:5px; /* Runde Ecke für Konqueror */
+    border-radius:5px; /* Runde Ecke für CSS3 */
+    background-color:#fffbe0;
+    border-style:solid;
+    border-color:#000000;
+    text-align:center;
+}
+.innershadowwhite
+{
+    display: table;
+    -moz-box-shadow: 0px 0px 5px 0px #ffffff; /* Schatten für Firefox */
+    -webkit-box-shadow: 0px 0px 5px 0px #ffffff; /* Schatten für Safari, Chrome */
+    -khtml-box-shadow: 0px 0px 5px 0px #ffffff; /* Schatten für Konqueror */
+    box-shadow: 0px 0px 5px 0px #ffffff; /* Schatten für CSS3 */
+    -moz-border-radius:5px; /* Runde Ecke für Firefox */
+    -webkit-border-radius:5px; /* Runde Ecke für Safari, Chrome */
+    -khtml-border-radius:5px; /* Runde Ecke für Konqueror */
+    border-radius:5px; /* Runde Ecke für CSS3 */
+    background-color:#191914;
+    border-style:solid;
+    border-color:#ffffff;
+    text-align:center;
+}
+.infoshadow
+{
+    display: table;
+    -moz-box-shadow: 0px 0px 1px 0px #ffffff; /* Schatten für Firefox */
+    -webkit-box-shadow: 0px 0px 1px 0px #ffffff; /* Schatten für Safari, Chrome */
+    -khtml-box-shadow: 0px 0px 1px 0px #ffffff; /* Schatten für Konqueror */
+    box-shadow: 0px 0px 1px 0px #ffffff; /* Schatten für CSS3 */
+    -moz-border-radius:10px; /* Runde Ecke für Firefox */
+    -webkit-border-radius:10px; /* Runde Ecke für Safari, Chrome */
+    -khtml-border-radius:10px; /* Runde Ecke für Konqueror */
+    border-radius:10px; /* Runde Ecke für CSS3 */
+    background-color:#191914;
+    border-style:solid;
+    border-color:#ffffff;
+    text-align:center;
+}
+.buttominfoshadow
+{
+    display: table;
+    -moz-box-shadow: 0px 0px 1px 0px #ffffff; /* Schatten für Firefox */
+    -webkit-box-shadow: 0px 0px 1px 0px #ffffff; /* Schatten für Safari, Chrome */
+    -khtml-box-shadow: 0px 0px 1px 0px #ffffff; /* Schatten für Konqueror */
+    box-shadow: 0px 0px 1px 0px #ffffff; /* Schatten für CSS3 */
+    -moz-border-radius:10px; /* Runde Ecke für Firefox */
+    -webkit-border-radius:10px; /* Runde Ecke für Safari, Chrome */
+    -khtml-border-radius:10px; /* Runde Ecke für Konqueror */
+    border-radius:10px; /* Runde Ecke für CSS3 */
+    background-color:#fffbe0;
+    border-style:solid;
+    border-color:#ab0000;
+    text-align:center;
+}
+body
+{
+    font-family: gara, Arial, 'Special Elite', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image:url(./static/paperback.jpg);
+    background-repeat:repeat;
+    background-color:#fffbe0;
+}
+.ro
+{
+    font-family: gara, Arial, 'Special Elite', sans-serif;
+    background-image:url(./static/ro.png);
+    background-position:top right;
+    background-repeat:no-repeat;
+}
+.ru
+{
+    font-family: gara, Arial, 'Special Elite', sans-serif;
+    background-image:url(./static/ru.png);
+    background-position:bottom right;
+    background-repeat:no-repeat;
+    font-size: 20px;
+}
+.lo
+{
+    font-family: gara, Arial, 'Special Elite', sans-serif;
+    background-image:url(./static/lo.png);
+    background-position:top left;
+    background-repeat:no-repeat;
+}
+.lu
+{
+    font-family: gara, Arial, 'Special Elite', sans-serif;
+    background-image:url(./static/lu.png);
+    background-position:bottom left;
+    background-repeat:no-repeat;
+}
+.mr
+{
+    font-family: gara, Arial, 'Special Elite', sans-serif;
+    background-image:url(./static/right.png);
+    background-position:right;
+    background-repeat:no-repeat;
+}
+.xn
+{
+    font-family: gara, Arial, 'Special Elite', sans-serif;
+    background-color:#191914;
+}
+.x
+{
+    font-family: gara, Arial, 'Special Elite', sans-serif;
+}
+.lhead
+{
+    margin-left: 10px;
+    font-weight: bold;
+    color: #000000;
+    text-shadow:#000000 1px 1px 0px;
+    font-size: 24px;
+}
+a.lhead:link { text-decoration:none;  color:#ffffff; }
+a.lhead:visited { text-decoration:none; color:#ffffff; }
+a.lhead:active { text-decoration:none; color:#ab0000; }
+a.lhead:hover { text-decoration:none; color:#ab0000; }
+.info
+{
+    margin: 15px;
+    color: #ffffff;
+    /*text-shadow:#000000 1px 1px 0px;*/
+    font-size: 20px;
+}
+.lbody
+{
+    font-weight: bold;
+    color: #ab0000;
+    text-shadow:#000000 1px 1px 0px;
+    font-size: 24px;
+}
+a.lbody:link { text-decoration:none;  color:#ab0000; }
+a.lbody:visited { text-decoration:none; color:#ab0000; }
+a.lbody:active { text-decoration:none; color:#ffffff; }
+a.lbody:hover { text-decoration:none; color:#ffffff; }
+.tbody
+{
+    margin-left: 20px;
+    margin-right: 180px;
+    color: #000000;
+    font-size: 24px;
+}
+.hbody
+{
+    color: #ab0000;
+}
+.littlebody
+{
+    font-size: 18px;
+}
+
+#sortable1 li, #sortable2 li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; width: 120px; }
