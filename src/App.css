@@ -19,12 +19,14 @@ a:hover { text-decoration:none; color:#ab0000; }
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
   filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 }
-#varina img, #franzi img, #wanda img, #lora img, #charly img {
+
+.teampics .grey{
     height: 80px;
 }
-.teampics img.main, #varina img.main, #franzi img.main, #wanda img.main, #lora img.main, #charly img.main {
+.teampics img.main {
     height: 160px;
 }
+
 .boxshadow
 {
     display: table;
@@ -203,3 +205,17 @@ a.lbody:hover { text-decoration:none; color:#ffffff; }
 }
 
 #sortable1 li, #sortable2 li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; width: 120px; }
+
+.link-list {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.link-list > li > a {
+    color: black;
+}
+.link-list > li > a:hover {
+    color: #ab0000;
+    text-decoration: underline;
+}
