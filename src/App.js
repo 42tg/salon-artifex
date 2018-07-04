@@ -105,6 +105,8 @@ class App extends Component {
                 <Link id="btPrices" to="/preise">Preise</Link><br/><br/>
                 <Link id="btPhotos" to="/video">Video</Link><br/><br/>
                 <Link id="btImpressum" to="/impressum">Impressum</Link><br/><br/>
+                <Link to="/team/franzi">Video</Link><br/><br/>
+                <Link to="/team/wanda">Video</Link><br/><br/>
                 <a href="https://www.facebook.com/SalonArtifex" rel="noopener noreferrer" target="_blank"><img src={facebookF} alt="Facebook" style={{float: 'left'}} border="0"/>anpage</a>
               </p>
             </td>

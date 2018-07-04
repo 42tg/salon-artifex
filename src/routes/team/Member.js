@@ -4,17 +4,22 @@ import { Link } from "react-router-dom"
 class Member extends Component {
     constructor(props){
         super(props)
-        
-        let current = {}
-        
-        current = props.members.find((member) => member.name.toLowerCase() === props.match.params.member)
-        this.state = {
+
+    }
+    componentWillMount(){
+        this.componentWillReceiveProps(this.props)
+    }
+    componentWillReceiveProps(newProps){
+        let current = null
+        current = newProps.members.find((member) => member.name.toLowerCase() === newProps.match.params.member)
+        let state = {
             current: current,
-            members: props.members.filter(member => member.name.toLowerCase() !== props.match.params.member)
+            members: newProps.members.filter(member => member.name.toLowerCase() !== newProps.match.params.member)
         }
-        this.setState(this.state)
+        this.setState(state)
     }
     render() {
+        if(!this.state) return ''
         return (
             <div id="Start" align="justify">
                 <div style={{paddingRight: 15}} className="teampics">
