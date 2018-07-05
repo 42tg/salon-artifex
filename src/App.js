@@ -54,7 +54,8 @@ class App extends Component {
             {
                 name: 'Lora',
                 image: loraImage,
-                text: 'Lora war schon immer sehr kontaktfreudig, pflichtbewusst und liebt den Umgang mit den verschiedensten Menschen, weshalb sie bereits vor ihrer Ausbildung zur Friseurin erfolgreich ihrer Mutter beim Führen einer Gaststätte half. 2008 begann sie ihre Ausbildung zur Friseurin, die sie nach Ihrer Elternzeit fortsetzte. Durch ihren starken Ehrgeiz, Lernbereitschaft und Willensstärke schaffte sie es, als alleinerziehende Mutter die Ausbildung mit Bravur abzuschließen. Nachdem andere Salons ihren Wissensdurst nicht stillen konnten, ist sie nun seit November 2015 ein wertvoller Teil des Teams. Als gebürtige Usbekin spricht sie nicht nur fließend Russisch, sondern begeistert auch durch ihre Herzlichkeit. Dank ihres ruhigen Wesens und Ihre einfühlsame Art sind besonders ängstlichere Kunden gut bei ihr aufgehoben.'
+                text: 'Lora war schon immer sehr kontaktfreudig, pflichtbewusst und liebt den Umgang mit den verschiedensten Menschen, weshalb sie bereits vor ihrer Ausbildung zur Friseurin erfolgreich ihrer Mutter beim Führen einer Gaststätte half. 2008 begann sie ihre Ausbildung zur Friseurin, die sie nach Ihrer Elternzeit fortsetzte. Durch ihren starken Ehrgeiz, Lernbereitschaft und Willensstärke schaffte sie es, als alleinerziehende Mutter die Ausbildung mit Bravur abzuschließen. Nachdem andere Salons ihren Wissensdurst nicht stillen konnten, ist sie nun seit November 2015 ein wertvoller Teil des Teams. Als gebürtige Usbekin spricht sie nicht nur fließend Russisch, sondern begeistert auch durch ihre Herzlichkeit. Dank ihres ruhigen Wesens und Ihre einfühlsame Art sind besonders ängstlichere Kunden gut bei ihr aufgehoben.',
+                hint: 'Lora ist aktuell in Elternzeit'
             },
             {
                 name: 'Charly',

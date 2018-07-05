@@ -31,6 +31,9 @@ class Member extends Component {
                 </div>
             
                 <h3>{this.state.current && this.state.current.name}</h3>
+                {this.state.current.hint && (
+                    <div align="center" className="hint"><hr/>{this.state.current.hint} <hr/></div>
+                )}
                 <p align="justify">
                     {this.state.current && this.state.current.text}
                 </p>
