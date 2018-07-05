@@ -67,23 +67,23 @@ class App extends Component {
   }
 
   render() {
-
+    const PUBLIC_URL = process.env.PUBLIC_URL
     const Content = withRouter(({ location }) => (
       <TransitionGroup className="animation-wrapper">
         <CSSTransition key={location.key} classNames="fade" timeout={{enter: 1000, exit: 500}} >
           {(state)=> {
             return (
           <Switch location={location}>                        
-            <Route exact path="/" component={Home} />
-            <Route exact path="/aktuelles" component={Aktuelles} />
-            <Route exact path="/philosophie" component={Philosophie} />
-            <Route exact path="/online-buchung" component={Onlinebuchung} />
-            <Route exact path="/anfahrt" component={Anfahrt} />
-            <Route exact path="/team" children={(props) => (<TeamStart {... props}  members={this.state.member}/>)} />
-            <Route path="/team/:member"  children={(props) => (<TeamMember {... props}  members={this.state.member}/>)}></Route>
-            <Route exact path="/preise" component={Preise} />
-            <Route exact path="/video" component={Video} />
-            <Route exact path="/impressum" component={Impressum} />
+            <Route exact path={`${PUBLIC_URL}/`} component={Home} />
+            <Route exact path={`${PUBLIC_URL}/aktuelles`}  component={Aktuelles} />
+            <Route exact path={`${PUBLIC_URL}/philosophie`}  component={Philosophie} />
+            <Route exact path={`${PUBLIC_URL}/online-buchung`}  component={Onlinebuchung} />
+            <Route exact path={`${PUBLIC_URL}/anfahrt`}  component={Anfahrt} />
+            <Route exact path={`${PUBLIC_URL}/team`}  children={(props) => (<TeamStart {... props}  members={this.state.member}/>)} />
+            <Route path={`${PUBLIC_URL}/team/:member`}   children={(props) => (<TeamMember {... props}  members={this.state.member}/>)}></Route>
+            <Route exact path={`${PUBLIC_URL}/preise`}  component={Preise} />
+            <Route exact path={`${PUBLIC_URL}/video`}  component={Video} />
+            <Route exact path={`${PUBLIC_URL}/impressum`}  component={Impressum} />
           </Switch>
           )}}
         </CSSTransition>
