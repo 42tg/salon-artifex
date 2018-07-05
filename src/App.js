@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch, withRouter} from "react-router-dom"
-import { TransitionGroup, CSSTransition  } from "react-transition-group";
+import { BrowserRouter as Router, Route, Link, Switch, withRouter} from 'react-router-dom'
+import { TransitionGroup, CSSTransition  } from 'react-transition-group'
 
 import logo from './static/Artifex-Logo-Final.png'
 import facebookF from './static/fb_48.png'
