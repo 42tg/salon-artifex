@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link, Switch, withRouter  } from "react-router-dom"
+import { BrowserRouter as Router, Route, Link, Switch, withRouter} from "react-router-dom"
+import { TransitionGroup, CSSTransition  } from "react-transition-group";
 
 import logo from './static/Artifex-Logo-Final.png'
 import facebookF from './static/fb_48.png'
@@ -33,6 +34,7 @@ class App extends Component {
     super(props)
     
     this.state = { 
+        in: false,
         member: [
             {
                 name: 'Franzi',
@@ -64,6 +66,29 @@ class App extends Component {
   }
 
   render() {
+
+    const Content = withRouter(({ location }) => (
+      <TransitionGroup className="animation-wrapper">
+        <CSSTransition key={location.key} classNames="fade" timeout={{enter: 1000, exit: 500}} >
+          {(state)=> {
+            return (
+          <Switch location={location}>                        
+            <Route exact path="/" component={Home} />
+            <Route exact path="/aktuelles" component={Aktuelles} />
+            <Route exact path="/philosophie" component={Philosophie} />
+            <Route exact path="/online-buchung" component={Onlinebuchung} />
+            <Route exact path="/anfahrt" component={Anfahrt} />
+            <Route exact path="/team" children={(props) => (<TeamStart {... props}  members={this.state.member}/>)} />
+            <Route path="/team/:member"  children={(props) => (<TeamMember {... props}  members={this.state.member}/>)}></Route>
+            <Route exact path="/preise" component={Preise} />
+            <Route exact path="/video" component={Video} />
+            <Route exact path="/impressum" component={Impressum} />
+          </Switch>
+          )}}
+        </CSSTransition>
+      </TransitionGroup>
+    ))
+
     return (
       <div align="center">
       <Router>
@@ -94,7 +119,7 @@ class App extends Component {
             <td className="x" width="68">
             </td>
             <td className="xn" width="210" valign="top">
-              <p className="lhead" align="left">
+              <div className="lhead" align="left">
                 
                 <Link id="btHome" to="/">Home</Link><br/><br/>
                 <Link id="btAktuelles" to="/aktuelles">Aktuelles</Link><br/><br/>
@@ -105,35 +130,11 @@ class App extends Component {
                 <Link id="btPrices" to="/preise">Preise</Link><br/><br/>
                 <Link id="btPhotos" to="/video">Video</Link><br/><br/>
                 <Link id="btImpressum" to="/impressum">Impressum</Link><br/><br/>
-                <Link to="/team/franzi">Video</Link><br/><br/>
-                <Link to="/team/wanda">Video</Link><br/><br/>
+                
                 <a href="https://www.facebook.com/SalonArtifex" rel="noopener noreferrer" target="_blank"><img src={facebookF} alt="Facebook" style={{float: 'left'}} border="0"/>anpage</a>
-              </p>
-            </td>
-            <td className="mr" valign="top" colSpan="2">
-                  <div className="tbody" >
-                  <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route exact path="/aktuelles" component={Aktuelles} />
-                    <Route exact path="/philosophie" component={Philosophie} />
-                    <Route exact path="/online-buchung" component={Onlinebuchung} />
-                    <Route exact path="/anfahrt" component={Anfahrt} />
-                    <Route exact path="/team" children={(props) => (<TeamStart {... props}  members={this.state.member}/>)} />
-                    <Route path="/team/:member"  children={(props) => (<TeamMember {... props}  members={this.state.member}/>)}></Route>
-                    
-                    
-                    <Route exact path="/preise" component={Preise} />
-                    <Route exact path="/video" component={Video} />
-                    <Route exact path="/impressum" component={Impressum} />
-                  </Switch>
-                  </div>
-            </td>
-            
-          </tr>
-          <tr>
-            <td className="lu" width="68" height="178"></td>
-            <td className="xn" width="210" valign="bottom">
-						  <div align="center">
+              </div>
+
+              <div align="center">
                 <a href="http://der-faire-salon.de/" rel="noopener noreferrer" target="_blank" title="Der faire Salon"><div className="innershadow">
                   <img src={faireSalon} width="170" alt="Der faire Salon" border="0" /></div></a>
   							<a href="http://www.pomade-shop.eu/" rel="noopener noreferrer" target="_blank" title="Pomade Shop"><div className="innershadow">
@@ -144,6 +145,18 @@ class App extends Component {
                   <img src={morganspomadeLogo} width="150px" alt="morgans"  style={{padding: 10}} border="0"/></div></a>
 							  <br/>
 						  </div>
+            </td>
+            <td className="mr" valign="top" colSpan="2">
+                  <div className="tbody" >
+                    <Content/>
+                  </div>
+            </td>
+            
+          </tr>
+          <tr>
+            <td className="lu" width="68" height="178"></td>
+            <td className="xn" width="210" valign="bottom">
+
             </td>
             <td className="ru">
               <table width="680" cellSpacing="0" rules="none" border="0">

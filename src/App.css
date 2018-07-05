@@ -20,16 +20,21 @@ a:hover { text-decoration:none; color:#ab0000; }
   filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 }
 
-.teampics .grey{
-    height: 80px;
+
+.teampics img{
+    width:100%;
 }
-.teampics img.main {
-    height: 160px;
+.teampics .main {
+    width: 260px;
+}
+
+.teampics .side{
+    width: 125px;
 }
 
 .boxshadow
 {
-    display: table;
+    display: inline-grid;
     -moz-box-shadow: 0px 0px 20px 20px #000000; /* Schatten für Firefox */
     -webkit-box-shadow: 0px 0px 20px 20px #000000; /* Schatten für Safari, Chrome */
     -khtml-box-shadow: 0px 0px 20px 20px #000000; /* Schatten für Konqueror */
@@ -42,7 +47,7 @@ a:hover { text-decoration:none; color:#ab0000; }
 }
 .innershadow
 {
-    display: table;
+    display: inline-grid;
     -moz-box-shadow: 0px 0px 5px 0px #000000; /* Schatten für Firefox */
     -webkit-box-shadow: 0px 0px 5px 0px #000000; /* Schatten für Safari, Chrome */
     -khtml-box-shadow: 0px 0px 5px 0px #000000; /* Schatten für Konqueror */
@@ -58,7 +63,7 @@ a:hover { text-decoration:none; color:#ab0000; }
 }
 .innershadowwhite
 {
-    display: table;
+    display: inline-grid;
     -moz-box-shadow: 0px 0px 5px 0px #ffffff; /* Schatten für Firefox */
     -webkit-box-shadow: 0px 0px 5px 0px #ffffff; /* Schatten für Safari, Chrome */
     -khtml-box-shadow: 0px 0px 5px 0px #ffffff; /* Schatten für Konqueror */
@@ -74,7 +79,7 @@ a:hover { text-decoration:none; color:#ab0000; }
 }
 .infoshadow
 {
-    display: table;
+    display: inline-grid;
     -moz-box-shadow: 0px 0px 1px 0px #ffffff; /* Schatten für Firefox */
     -webkit-box-shadow: 0px 0px 1px 0px #ffffff; /* Schatten für Safari, Chrome */
     -khtml-box-shadow: 0px 0px 1px 0px #ffffff; /* Schatten für Konqueror */
@@ -90,7 +95,7 @@ a:hover { text-decoration:none; color:#ab0000; }
 }
 .buttominfoshadow
 {
-    display: table;
+    display: inline-grid;
     -moz-box-shadow: 0px 0px 1px 0px #ffffff; /* Schatten für Firefox */
     -webkit-box-shadow: 0px 0px 1px 0px #ffffff; /* Schatten für Safari, Chrome */
     -khtml-box-shadow: 0px 0px 1px 0px #ffffff; /* Schatten für Konqueror */
@@ -146,7 +151,7 @@ body
 {
     font-family: gara, Arial, 'Special Elite', sans-serif;
     background-image:url(./static/right.png);
-    background-position:right;
+    background-position:top right;
     background-repeat:no-repeat;
 }
 .xn
@@ -161,6 +166,7 @@ body
 .lhead
 {
     margin-left: 10px;
+    margin-bottom: 30px;
     font-weight: bold;
     color: #000000;
     text-shadow:#000000 1px 1px 0px;
@@ -218,4 +224,44 @@ a.lbody:hover { text-decoration:none; color:#ffffff; }
 .link-list > li > a:hover {
     color: #ab0000;
     text-decoration: underline;
+}
+
+.tbody { position: relative;}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: inline-grid;
+}
+
+.fade-enter {
+    background-color: #fffbe0;
+    position: relative;
+    opacity: 0;
+}
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    transition-delay: 500ms;
+}
+
+
+.fade-exit {
+    position:absolute;
+    top:0;
+    opacity: 1;
+    width:100%;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 250ms ease-out;
+
+    z-index: 1;
+}
+.animation-wrapper
+{
+    position: relative;
+    display:inline-block;
+    width:100%;
 }

@@ -5,11 +5,11 @@ class Video extends Component {
 
     render() {
         return (
-            <div id="video" align="center">
+            <div align="center">
                 <h2>Video</h2>
-                <div class="innershadow">
-                    <a id="movie" href="http://www.youtube.com/embed/dhUbGzXog1I?autoplay=1"><img alt="" src={moviePlaceholder} border="0"/></a>
-                </div>
+
+                    <a id="movie" href="http://www.youtube.com/embed/dhUbGzXog1I?autoplay=1" rel="noopener noreferrer" target="_blank"><img alt="" src={moviePlaceholder} border="0"/></a>
+
             </div>
         )
     }

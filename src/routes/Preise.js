@@ -26,7 +26,7 @@ class Preise extends Component {
                 <tr>
                     <td align="left">
                         <p>
-                            <a id="pic" href="./pic/Schaukasten18.jpg"><img src={schaukasten} style={{width: 500}} alt="Preisaushang"/></a>
+                           <img src={schaukasten} style={{width: 500}} alt="Preisaushang"/>
                         </p>
                     </td>
                 </tr>

@@ -6,7 +6,7 @@ class Onlinebuchung extends Component {
 
     render() {
         return (
-            <div id="online-buchung" align="center">
+            <div align="center">
                 <p align="center">
                     Du m&ouml;chtest auch au&szlig;erhalb der &Ouml;ffnungszeiten selbst&auml;ndig einen Termin vereinbaren?
                     Kein Problem! Einfach den Button anklicken, registrieren und Termin vereinbaren.

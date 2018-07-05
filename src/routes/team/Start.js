@@ -8,7 +8,7 @@ class Start extends Component {
 
     render() {
         return (
-            <div id="Start" align="center">
+            <div align="center">
                 <h3>Team</h3>
                 <div className="innershadow">
                     <img style={{width: 500}} src={teamPicture} alt="Team Mitglieder" border="0"/>

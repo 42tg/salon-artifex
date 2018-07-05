@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 
 class Philosophie extends Component {
-
     render() {
         return (
-            <div id="philosophie" align="center">
+            <div align="center">
                 <h2>Willkommen bei Artifex</h2>
                 <p>
                     Wir m&ouml;chten Euch in unserem Salon einen individuellen Style geben,
