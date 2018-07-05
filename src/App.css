@@ -45,6 +45,10 @@ a:hover { text-decoration:none; color:#ab0000; }
     border-radius:10px; /* Runde Ecke für CSS3 */
     background-color:#fffbe0;
 }
+button.innershadow {
+    padding:0;
+    cursor: pointer;
+}
 .innershadow
 {
     display: inline-grid;
