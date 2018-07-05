@@ -122,15 +122,15 @@ class App extends Component {
             <td className="xn" width="210" valign="top">
               <div className="lhead" align="left">
                 
-                <Link id="btHome" to="/">Home</Link><br/><br/>
-                <Link id="btAktuelles" to="/aktuelles">Aktuelles</Link><br/><br/>
-                <Link id="btPhilosophie" to="/philosophie">Philosophie</Link><br/><br/>
-                <Link id="btTerminplaner" to="/online-buchung">Online-Buchung</Link><br/><br/>
-                <Link id="btAnfahrt" to="/anfahrt">Anfahrt</Link><br/><br/>
-                <Link id="btTeam" to="/team">Team</Link><br/><br/>
-                <Link id="btPrices" to="/preise">Preise</Link><br/><br/>
-                <Link id="btPhotos" to="/video">Video</Link><br/><br/>
-                <Link id="btImpressum" to="/impressum">Impressum</Link><br/><br/>
+                <Link id="btHome" to={`${PUBLIC_URL}/`}>Home</Link><br/><br/>
+                <Link id="btAktuelles" to={`${PUBLIC_URL}/aktuelles`}>Aktuelles</Link><br/><br/>
+                <Link id="btPhilosophie" to={`${PUBLIC_URL}/philosophie`}>Philosophie</Link><br/><br/>
+                <Link id="btTerminplaner" to={`${PUBLIC_URL}/online-buchung`}>Online-Buchung</Link><br/><br/>
+                <Link id="btAnfahrt" to={`${PUBLIC_URL}/anfahrt`}>Anfahrt</Link><br/><br/>
+                <Link id="btTeam" to={`${PUBLIC_URL}/team`}>Team</Link><br/><br/>
+                <Link id="btPrices" to={`${PUBLIC_URL}/preise`}>Preise</Link><br/><br/>
+                <Link id="btPhotos" to={`${PUBLIC_URL}/video`}>Video</Link><br/><br/>
+                <Link id="btImpressum" to={`${PUBLIC_URL}/impressum`}>Impressum</Link><br/><br/>
                 
                 <a href="https://www.facebook.com/SalonArtifex" rel="noopener noreferrer" target="_blank"><img src={facebookF} alt="Facebook" style={{float: 'left'}} border="0"/>anpage</a>
               </div>
