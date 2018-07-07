@@ -1,7 +1,7 @@
 {
   "name": "salon-artifex",
   "version": "0.1.0",
-  "homepage": "https://42tg.github.io/salon-artifex/",
+  "homepage": "http://salonartifex.de",
   "private": true,
   "dependencies": {
     "react": "^16.4.1",
@@ -23,6 +23,10 @@
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "gh-pages": "^1.2.0"
+    "gh-pages": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.8",
+    "minimist": "^1.2.0",
+    "vinyl-ftp": "^0.6.1"
   }
 }
