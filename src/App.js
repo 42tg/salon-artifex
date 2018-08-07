@@ -60,7 +60,7 @@ class App extends Component {
             {
                 name: 'Charly',
                 image: charlyImage,
-                text: 'Text fehlt :('
+                text: 'Charly absolviert bei uns die Ausbildung seit August 2017 bis Juli 2020. Sie ist auf den ersten Blick eine ruhigere Zeitgenossin, die besonders durch ihre Zuverlässigkeit und Sorgfalt heraus sticht. <br/>Sie sucht ständig Modelle für Damen- und Herrenschnitte, Dauerwelle und alles andere, was wir für unseren wundervollen Beruf lernen müssen. <br/>Bei Interesse: Sprecht uns an!'
             }
         ]
     }

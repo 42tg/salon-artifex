@@ -14,6 +14,9 @@ class Home extends Component {
             <table>
                 <tbody>
                     <tr>
+                        <th style={{textAlign: 'left'}}>Franzi:</th><td>28.08.- 12.09.</td>
+                    </tr>
+                    <tr>
                         <th style={{textAlign: 'left'}}>Lora:</th><td>19.07.- 08.08.</td>
                     </tr>
                     <tr>
