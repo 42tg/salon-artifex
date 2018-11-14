@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-import teamPicture from './GruppenbildLoraSW.jpg'
+import teamPicture from './team-weinachten.jpg'
 
 import { Link } from "react-router-dom"
 class Start extends Component {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import mainImage from './home/GruppenbildLoraSW.jpg'
+import mainImage from './team/team-weinachten.jpg'
 class Home extends Component {
 
     render() {

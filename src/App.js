@@ -25,7 +25,6 @@ import franziImage from './routes/team/franzi.jpg'
 import varinaImage from './routes/team/varina.jpg'
 import wandaImage from './routes/team/wanda.jpg'
 import loraImage from './routes/team/lora.jpg'
-import charlyImage from './routes/team/charly.jpg'
 
 
 import './App.css';
