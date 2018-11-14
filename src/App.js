@@ -32,8 +32,8 @@ import './App.css';
 class App extends Component {
   constructor(props){
     super(props)
-    
-    this.state = { 
+
+    this.state = {
         in: false,
         member: [
             {
@@ -56,11 +56,6 @@ class App extends Component {
                 image: loraImage,
                 text: 'Lora war schon immer sehr kontaktfreudig, pflichtbewusst und liebt den Umgang mit den verschiedensten Menschen, weshalb sie bereits vor ihrer Ausbildung zur Friseurin erfolgreich ihrer Mutter beim Führen einer Gaststätte half. 2008 begann sie ihre Ausbildung zur Friseurin, die sie nach Ihrer Elternzeit fortsetzte. Durch ihren starken Ehrgeiz, Lernbereitschaft und Willensstärke schaffte sie es, als alleinerziehende Mutter die Ausbildung mit Bravur abzuschließen. Nachdem andere Salons ihren Wissensdurst nicht stillen konnten, ist sie nun seit November 2015 ein wertvoller Teil des Teams. Als gebürtige Usbekin spricht sie nicht nur fließend Russisch, sondern begeistert auch durch ihre Herzlichkeit. Dank ihres ruhigen Wesens und Ihre einfühlsame Art sind besonders ängstlichere Kunden gut bei ihr aufgehoben.',
                 hint: 'Lora ist aktuell in Elternzeit'
-            },
-            {
-                name: 'Charly',
-                image: charlyImage,
-                text: 'Charly absolviert bei uns die Ausbildung seit August 2017 bis Juli 2020. Sie ist auf den ersten Blick eine ruhigere Zeitgenossin, die besonders durch ihre Zuverlässigkeit und Sorgfalt heraus sticht. <br/>Sie sucht ständig Modelle für Damen- und Herrenschnitte, Dauerwelle und alles andere, was wir für unseren wundervollen Beruf lernen müssen. <br/>Bei Interesse: Sprecht uns an!'
             }
         ]
     }
@@ -73,7 +68,7 @@ class App extends Component {
         <CSSTransition key={location.key} classNames="fade" timeout={{enter: 1000, exit: 500}} >
           {(state)=> {
             return (
-          <Switch location={location}>                        
+          <Switch location={location}>
             <Route exact path={`${PUBLIC_URL}/`} component={Home} />
             <Route exact path={`${PUBLIC_URL}/aktuelles`}  component={Aktuelles} />
             <Route exact path={`${PUBLIC_URL}/philosophie`}  component={Philosophie} />
@@ -121,7 +116,7 @@ class App extends Component {
             </td>
             <td className="xn" width="210" valign="top">
               <div className="lhead" align="left">
-                
+
                 <Link id="btHome" to={`${PUBLIC_URL}/`}>Home</Link><br/><br/>
                 <Link id="btAktuelles" to={`${PUBLIC_URL}/aktuelles`}>Aktuelles</Link><br/><br/>
                 <Link id="btPhilosophie" to={`${PUBLIC_URL}/philosophie`}>Philosophie</Link><br/><br/>
@@ -131,7 +126,7 @@ class App extends Component {
                 <Link id="btPrices" to={`${PUBLIC_URL}/preise`}>Preise</Link><br/><br/>
                 <Link id="btPhotos" to={`${PUBLIC_URL}/video`}>Video</Link><br/><br/>
                 <Link id="btImpressum" to={`${PUBLIC_URL}/impressum`}>Impressum</Link><br/><br/>
-                
+
                 <a href="https://www.facebook.com/SalonArtifex" rel="noopener noreferrer" target="_blank"><img src={facebookF} alt="Facebook" style={{float: 'left'}} border="0"/>anpage</a>
               </div>
 
@@ -152,7 +147,7 @@ class App extends Component {
                     <Content/>
                   </div>
             </td>
-            
+
           </tr>
           <tr>
             <td className="lu" width="68" height="178"></td>
@@ -202,7 +197,7 @@ class App extends Component {
             </td>
           </tr>
         </tbody>
-        </table>            
+        </table>
         </div>
       </Router>
       </div>
