@@ -9,12 +9,13 @@ class Home extends Component {
             <div align="center">
                 <h3>Hier d&uuml;rft Ihr Euch wie zu Hause f&uuml;hlen!</h3>
                 <div className="innershadow">
-                    <img src={mainImage} alt="salon" border="0" title="Willkommen bei Artifex!" style= {{width :400}} />
+                    <img src={mainImage} alt="salon" border="0" title="Willkommen bei Artifex!" style= {{width :500}} />
                 </div>
             <br/>
+            {/*
             <p>Unsere Urlaubszeiten: </p>
             <table>
-                <tbody>
+               <tbody>
                     <tr>
                         <th style={{textAlign: 'left'}}>Franzi:</th><td>23.08. - 10.09.</td>
                     </tr>
@@ -29,6 +30,7 @@ class Home extends Component {
                     </tr>
                 </tbody>
             </table>
+            */}
             </div>
         )
     }
