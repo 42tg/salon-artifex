@@ -15,7 +15,7 @@ class Start extends Component {
                 </div>
                 <ul className="link-list">
                     {this.props.members && this.props.members.map((member, i)=>(
-                        <li key={i} ><Link id="btHome" to={`${this.props.match.url}/${member.name.toLowerCase()}`}>{member.name}</Link></li>
+                        <li key={i} ><Link id="btHome" data-cy={`team-${member.name.toLowerCase()}`} to={`${this.props.match.url}/${member.name.toLowerCase()}`}>{member.name}</Link></li>
                     ))}
                 </ul>
                 <h4>Um mehr über mich und mein Team zu erfahren, einfach auf die Namen klicken.</h4>

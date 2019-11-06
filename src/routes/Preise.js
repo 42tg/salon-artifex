@@ -34,7 +34,7 @@ class Preise extends Component {
                 </tr>
                 <tr>
                     <td align="left">
-                        <button className="innershadow" onClick={() => this.setState({ isOpen: true })}>
+                        <button className="innershadow" data-cy="preise-lightbox" onClick={() => this.setState({ isOpen: true })}>
                             <img src={schaukasten} style={{width: 500}} alt="Preisaushang"/>
                         </button>
                         { isOpen && (

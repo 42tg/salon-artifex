@@ -14,6 +14,7 @@ class Member extends Component {
         }
         this.setState(state)
     }
+
     render() {
         if(!this.state) return ''
         return (
@@ -22,14 +23,14 @@ class Member extends Component {
                     <div className="innershadow main" style={{float:'left'}}>
                         <img src={this.state.current.image} alt={this.state.current.name} border="0"/>
                     </div>
-                    
+
                     {this.state.members.map((member, i) => (
-                        <Link to={`${this.props.match.path.replace(':member',member.name.toLowerCase())}`} className="innershadow side" style={{float: 'right'}} key={i}>
-                           <img className="grey" src={member.image} alt={member.name} border="0"/>
+                        <Link  data-cy={`team-${member.name.toLowerCase()}`} to={`${this.props.match.path.replace(':member',member.name.toLowerCase())}`} className="innershadow side" style={{float: 'right'}} key={i}>
+                            <img className="grey" src={member.image} alt={member.name} border="0"/>
                         </Link>
                     ))}
                 </div>
-            
+
                 <h3>{this.state.current && this.state.current.name}</h3>
                 {this.state.current.hint && (
                     <div align="center" className="hint"><hr/>{this.state.current.hint} <hr/></div>
