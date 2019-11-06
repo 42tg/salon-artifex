@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import mainImage from './home/GruppenbildLoraSW.jpg'
+import mainImage from './home/weihnachten19-2FB.jpg'
 
 class Home extends Component {
 
@@ -19,10 +19,10 @@ class Home extends Component {
                         <th style={{textAlign: 'left'}}>Franzi:</th><td>23.08. - 10.09.</td>
                     </tr>
                     <tr>
-                        <th style={{textAlign: 'left'}}>Varina:</th> <td>09.07. - 16.07.</td>
+                        <th style={{textAlign: 'left'}}>Varina:</th><td>09.07. - 16.07.</td>
                     </tr>
                     <tr>
-                        <th style={{textAlign: 'left'}}></th> <td>  27.08. - 06.09. </td>
+                        <th style={{textAlign: 'left'}}></th><td>  27.08. - 06.09. </td>
                     </tr>
                     <tr>
                         <th style={{textAlign: 'left'}}>Wanda:</th><td>14.06. - 25.06.</td>

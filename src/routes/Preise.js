@@ -3,7 +3,7 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 
 
-import schaukasten from './preise/Schaukasten.jpg'
+import schaukasten from './preise/Schaukasteninnen19.jpg'
 
 class Preise extends Component {
     constructor(props){
@@ -41,7 +41,7 @@ class Preise extends Component {
                             <Lightbox mainSrc={schaukasten}
                                 onCloseRequest={() => this.setState({ isOpen: false })}/>
                         )}
-                        
+
                     </td>
                 </tr>
                 <tr>
