@@ -18,7 +18,7 @@ E-Mail: artifex@web.de
 
 Internet: www.salonartifex.de
 
-Umsatzsteueridentifikationsnummer 66/144/16581
+Umsatzsteueridentifikationsnummer DE25 69 52 774
 Handswerks-Identifikationsnummer 22897
 
 

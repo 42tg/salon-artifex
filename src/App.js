@@ -25,6 +25,8 @@ import franziImage from './routes/team/franzi.jpg'
 import varinaImage from './routes/team/varina.jpg'
 import wandaImage from './routes/team/wanda.jpg'
 import loraImage from './routes/team/lora.jpg'
+import filizImage from './routes/team/filiz.jpg'
+
 
 
 import './App.css';
@@ -55,6 +57,11 @@ class App extends Component {
                 image: loraImage,
                 text: 'Lora war schon immer sehr kontaktfreudig, pflichtbewusst und liebt den Umgang mit den verschiedensten Menschen, weshalb sie bereits vor ihrer Ausbildung zur Friseurin erfolgreich ihrer Mutter beim Führen einer Gaststätte half. 2008 begann sie ihre Ausbildung zur Friseurin, die sie nach Ihrer Elternzeit fortsetzte. Durch ihren starken Ehrgeiz, Lernbereitschaft und Willensstärke schaffte sie es, als alleinerziehende Mutter die Ausbildung mit Bravur abzuschließen. Nachdem andere Salons ihren Wissensdurst nicht stillen konnten, ist sie nun seit November 2015 ein wertvoller Teil des Teams. Als gebürtige Usbekin spricht sie nicht nur fließend Russisch, sondern begeistert auch durch ihre Herzlichkeit. Dank ihres ruhigen Wesens und Ihre einfühlsame Art sind besonders ängstlichere Kunden gut bei ihr aufgehoben.',
                 hint: 'Lora ist aktuell in Elternzeit'
+            },
+            {
+              name: 'Filiz',
+              image: filizImage,
+              text: 'ist seit 1.September 2011 fester Bestandteil des Teams und jetzt nach langer Krankheit endlich wieder da. Als gebürtige Osnabrückerin arbeitete Filiz bei mehreren namenhaften Friseuren, bis sie auf der Suche nach einem neuen Wirkungskreis bei uns gelandet ist. Sie beendete 2001 erfolgreich ihre Friseurausbildung und glänzt nun mit mehr als 10 Jahren Berufserfahrung. Sie ist ein lebenslustiges, quirliges Mädel, die es versteht, auf Deinen individuellen Charakter und Stil einzugehen und steht Dir mit Rat und Tat bei der Umsetzung Deiner Wünsche zur Seite. Sie ist eine wahre Koryphäe, wenn es um festliche Frisuren geht. Sei es die Steckfrisur für die Hochzeit, das glatte Styling für die Disco oder die Föhnwelle für die Mottoparty; Filiz erfüllt Dir jeden Wunsch. Natürlich verkörpert sie auch in den Bereichen Schnitt und Farbe das Motto „Perfektion hat Stil“. Filiz ist jeden Nachmittag für Euch da.',
             }
         ]
     }

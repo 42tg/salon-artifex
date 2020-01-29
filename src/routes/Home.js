@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import mainImage from './home/weihnachten19-2FB.jpg'
+import mainImage from './home/salon_umbau.jpg'
 
 class Home extends Component {
 
@@ -12,25 +12,28 @@ class Home extends Component {
                     <img src={mainImage} alt="salon" border="0" title="Willkommen bei Artifex!" style= {{width :500}} />
                 </div>
             <br/>
-            {/*
+           
             <p>Unsere Urlaubszeiten: </p>
             <table>
                <tbody>
                     <tr>
-                        <th style={{textAlign: 'left'}}>Franzi:</th><td>23.08. - 10.09.</td>
+                        <th style={{textAlign: 'left'}}>Franzi:</th><td>22.03. - 30.05. Krankheitsbedingt</td>
                     </tr>
                     <tr>
-                        <th style={{textAlign: 'left'}}>Varina:</th><td>09.07. - 16.07.</td>
+                        <th style={{textAlign: 'left'}}></th><td>11.08. - 26.08.</td>
                     </tr>
                     <tr>
-                        <th style={{textAlign: 'left'}}></th><td>  27.08. - 06.09. </td>
+                        <th style={{textAlign: 'left'}}>Varina:</th><td>30.07. - 07.08.</td>
                     </tr>
                     <tr>
-                        <th style={{textAlign: 'left'}}>Wanda:</th><td>14.06. - 25.06.</td>
+                        <th style={{textAlign: 'left'}}></th><td>15.09. - 25.09.</td>
+                    </tr>
+                    <tr>
+                        <th style={{textAlign: 'left'}}>Wanda:</th><td>06.01. - 14.03. Meisterschule</td>
                     </tr>
                 </tbody>
             </table>
-            */}
+           
             </div>
         )
     }
