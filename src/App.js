@@ -11,7 +11,7 @@ import morganspomadeLogo from './static/morgans-pomade.png'
 
 
 import Home from './routes/Home'
-import Aktuelles from './routes/Aktuelles'
+import Jobs from './routes/Jobs'
 import Philosophie from './routes/Philosophie'
 import Onlinebuchung from './routes/Onlinebuchung'
 import Anfahrt from './routes/Anfahrt'
@@ -76,7 +76,7 @@ class App extends Component {
             return (
           <Switch location={location}>
             <Route exact path={`${PUBLIC_URL}/`} component={Home} />
-            <Route exact path={`${PUBLIC_URL}/aktuelles`}  component={Aktuelles} />
+            <Route exact path={`${PUBLIC_URL}/jobs`}  component={Jobs} />
             <Route exact path={`${PUBLIC_URL}/philosophie`}  component={Philosophie} />
             <Route exact path={`${PUBLIC_URL}/online-buchung`}  component={Onlinebuchung} />
             <Route exact path={`${PUBLIC_URL}/anfahrt`}  component={Anfahrt} />
@@ -124,7 +124,7 @@ class App extends Component {
               <div className="lhead" align="left">
 
                 <Link id="btHome" to={`${PUBLIC_URL}/`}>Home</Link><br/><br/>
-                <Link id="btAktuelles" to={`${PUBLIC_URL}/aktuelles`}>Aktuelles</Link><br/><br/>
+                <Link id="btJobs" to={`${PUBLIC_URL}/jobs`}>Jobs</Link><br/><br/>
                 <Link id="btPhilosophie" to={`${PUBLIC_URL}/philosophie`}>Philosophie</Link><br/><br/>
                 <Link id="btTerminplaner" to={`${PUBLIC_URL}/online-buchung`}>Online-Buchung</Link><br/><br/>
                 <Link id="btAnfahrt" to={`${PUBLIC_URL}/anfahrt`}>Anfahrt</Link><br/><br/>
