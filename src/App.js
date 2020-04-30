@@ -26,7 +26,7 @@ import varinaImage from './routes/team/varina.jpg'
 import wandaImage from './routes/team/wanda.jpg'
 import loraImage from './routes/team/lora.jpg'
 import filizImage from './routes/team/filiz.jpg'
-import corona from "./static/corona-4914549_1280.png"
+
 
 
 import './App.css';
@@ -71,58 +71,25 @@ class App extends Component {
     const PUBLIC_URL = process.env.PUBLIC_URL
     const Content = withRouter(({ location }) => (
       <TransitionGroup className="animation-wrapper">
-        <img className="closed" src={corona} alt="We are closed temporarly" />
-        <CSSTransition
-          key={location.key}
-          classNames="fade"
-          timeout={{ enter: 1000, exit: 500 }}
-        >
-          {state => {
+        <CSSTransition key={location.key} classNames="fade" timeout={{enter: 1000, exit: 500}} >
+          {(state)=> {
             return (
-              <Switch location={location}>
-                <Route exact path={`${PUBLIC_URL}/`} component={Home} />
-                <Route exact path={`${PUBLIC_URL}/jobs`} component={Jobs} />
-                <Route
-                  exact
-                  path={`${PUBLIC_URL}/philosophie`}
-                  component={Philosophie}
-                />
-                <Route
-                  exact
-                  path={`${PUBLIC_URL}/online-buchung`}
-                  component={Onlinebuchung}
-                />
-                <Route
-                  exact
-                  path={`${PUBLIC_URL}/anfahrt`}
-                  component={Anfahrt}
-                />
-                <Route
-                  exact
-                  path={`${PUBLIC_URL}/team`}
-                  children={props => (
-                    <TeamStart {...props} members={this.state.member} />
-                  )}
-                />
-                <Route
-                  path={`${PUBLIC_URL}/team/:member`}
-                  children={props => (
-                    <TeamMember {...props} members={this.state.member} />
-                  )}
-                ></Route>
-                <Route exact path={`${PUBLIC_URL}/preise`} component={Preise} />
-                <Route exact path={`${PUBLIC_URL}/video`} component={Video} />
-                <Route
-                  exact
-                  path={`${PUBLIC_URL}/impressum`}
-                  component={Impressum}
-                />
-              </Switch>
-            );
-          }}
+          <Switch location={location}>
+            <Route exact path={`${PUBLIC_URL}/`} component={Home} />
+            <Route exact path={`${PUBLIC_URL}/jobs`}  component={Jobs} />
+            <Route exact path={`${PUBLIC_URL}/philosophie`}  component={Philosophie} />
+            <Route exact path={`${PUBLIC_URL}/online-buchung`}  component={Onlinebuchung} />
+            <Route exact path={`${PUBLIC_URL}/anfahrt`}  component={Anfahrt} />
+            <Route exact path={`${PUBLIC_URL}/team`}  children={(props) => (<TeamStart {... props}  members={this.state.member}/>)} />
+            <Route path={`${PUBLIC_URL}/team/:member`}   children={(props) => (<TeamMember {... props}  members={this.state.member}/>)}></Route>
+            <Route exact path={`${PUBLIC_URL}/preise`}  component={Preise} />
+            <Route exact path={`${PUBLIC_URL}/video`}  component={Video} />
+            <Route exact path={`${PUBLIC_URL}/impressum`}  component={Impressum} />
+          </Switch>
+          )}}
         </CSSTransition>
       </TransitionGroup>
-    ));
+    ))
 
     return (
       <div align="center">

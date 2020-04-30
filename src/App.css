@@ -269,9 +269,3 @@ a.lbody:hover { text-decoration:none; color:#ffffff; }
     display:inline-block;
     width:100%;
 }
-
-.closed {
-    position: absolute;
-    left: -75%;
-    pointer-events: none;
-}

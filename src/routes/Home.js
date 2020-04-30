@@ -19,8 +19,7 @@ class Home extends Component {
             </div>
             <br />
             <h2>
-              Zum Infektionsschutz geschlossen bis einschließlich 11.04.2020
-              (Stand 18.03.2020)
+              Wir haben geöffnet!
             </h2>
             <p>Unsere Urlaubszeiten: </p>
             <table>
