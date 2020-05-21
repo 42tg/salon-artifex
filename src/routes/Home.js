@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
+import mainImage from './home/Kundenhinweis2.jpg';
 
-import mainImage from './home/salon_umbau.jpg'
 
 class Home extends Component {
 
     render() {
         return (
-          <div align="center">
-            <h3>Hier d&uuml;rft Ihr Euch wie zu Hause f&uuml;hlen!</h3>
+          <div align="center"> 
+          {/* <h3>Hier dürft Ihr Euch wie zu Hause fühlen!</h3> */}
             <div className="innershadow">
               <img
                 src={mainImage}
@@ -26,7 +26,7 @@ class Home extends Component {
               <tbody>
                 <tr>
                   <th style={{ textAlign: "left" }}>Franzi:</th>
-                  <td>11.08. - 26.08.</td>
+                  <td>08.06. - 26.08.</td>
                 </tr>
                 <tr>
                   <th style={{ textAlign: "left" }}>Varina:</th>
