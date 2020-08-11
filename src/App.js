@@ -194,7 +194,7 @@ class App extends Component {
                     <p align="left">
                       10:00 - 19:00 Uhr<br/>
                       10:00 - 19:00 Uhr<br/>
-                      09:00 - 15:00 Uhr
+                      09:00 - 13:00 Uhr
                     </p>
                   </td>
                 </tr>
