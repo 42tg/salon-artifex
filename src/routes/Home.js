@@ -18,24 +18,25 @@ class Home extends Component {
               />
             </div>
             <br />
-            <h2>
+            {/* <h2>
               Wir haben geöffnet!
-            </h2>
+            </h2> */}
+            <h2>Wir sind wegen Corona leider gerade nicht für euch da!</h2>
             <p>Unsere Urlaubszeiten: </p>
             <table>
               <tbody>
                 <tr>
                   <th style={{ textAlign: "left" }}>Franzi:</th>
-                  <td>08.06. - 26.08.</td>
+                  <td>1.4. - 31.9.2021</td>
                 </tr>
-                <tr>
+                {/* <tr>
                   <th style={{ textAlign: "left" }}>Varina:</th>
                   <td>30.07. - 07.08.</td>
                 </tr>
                 <tr>
                   <th style={{ textAlign: "left" }}></th>
                   <td>15.09. - 25.09.</td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </div>
