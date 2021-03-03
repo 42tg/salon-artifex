@@ -18,10 +18,10 @@ class Home extends Component {
               />
             </div>
             <br />
-            {/* <h2>
+            <h2>
               Wir haben geöffnet!
-            </h2> */}
-            <h2>Wir sind wegen Corona leider gerade nicht für euch da!</h2>
+            </h2>
+            {/* <h2>Wir sind wegen Corona leider gerade nicht für euch da!</h2> */}
             <p>Unsere Urlaubszeiten: </p>
             <table>
               <tbody>
