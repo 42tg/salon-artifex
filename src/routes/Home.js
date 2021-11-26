@@ -22,10 +22,10 @@ class Home extends Component {
               Wir haben geöffnet!
             </h2>
             {/* <h2>Wir sind wegen Corona leider gerade nicht für euch da!</h2> */}
-            <p>Zum Schutz für Euch und uns gilt bei uns weiterhin die 3G-Regelung:<br/>
+            <p>Zum Schutz für Euch und uns gilt bei uns die 2G-Regelung:<br/>
                 Geimpft<br/>
                 Genesen<br/>
-                Getestet<br/>
+                {/* Getestet<br/> */}
                 <br/>
                 Sollte ein Termin aufgrund fehlender Nachweise nicht stattfinden können, müssen wir Euch diesen in Rechnung stellen.<br/>
                 Wir bitten um Euer Verständnis.<br/>
