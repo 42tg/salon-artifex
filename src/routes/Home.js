@@ -22,7 +22,7 @@ class Home extends Component {
               Wir haben geöffnet!
             </h2>
             {/* <h2>Wir sind wegen Corona leider gerade nicht für euch da!</h2> */}
-            <p>Zum Schutz für Euch und uns gilt bei uns die 2G-Regelung:<br/>
+            <p>Zum Schutz für Euch und uns gilt bei uns die <br/>2G-Regelung:<br/>
                 Geimpft<br/>
                 Genesen<br/>
                 {/* Getestet<br/> */}
