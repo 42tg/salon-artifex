@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bc9e1f85.chunk.css",
+    "main.js": "/static/js/main.11af40f7.chunk.js",
+    "main.js.map": "/static/js/main.11af40f7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e0778bc8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e0778bc8.js.map",
+    "static/css/2.9522b9fe.chunk.css": "/static/css/2.9522b9fe.chunk.css",
+    "static/js/2.1e492332.chunk.js": "/static/js/2.1e492332.chunk.js",
+    "static/js/2.1e492332.chunk.js.map": "/static/js/2.1e492332.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.746185b28d486a9cd3b1746b7d59ebe6.js": "/precache-manifest.746185b28d486a9cd3b1746b7d59ebe6.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.9522b9fe.chunk.css.map": "/static/css/2.9522b9fe.chunk.css.map",
+    "static/css/main.bc9e1f85.chunk.css.map": "/static/css/main.bc9e1f85.chunk.css.map",
+    "static/media/Artifex-Logo-Final.png": "/static/media/Artifex-Logo-Final.fb7281a4.png",
+    "static/media/Kundenhinweis2.jpg": "/static/media/Kundenhinweis2.b488df9d.jpg",
+    "static/media/Schaukasteninnen22b.jpg": "/static/media/Schaukasteninnen22b.22a8009d.jpg",
+    "static/media/anfahrt.jpg": "/static/media/anfahrt.b26b84b8.jpg",
+    "static/media/filiz.jpg": "/static/media/filiz.fac6742f.jpg",
+    "static/media/franzi.jpg": "/static/media/franzi.7b054fed.jpg",
+    "static/media/App.css": "/static/media/paperback.8e089780.jpg",
+    "static/media/lora.jpg": "/static/media/lora.b01f0604.jpg",
+    "static/media/movie.jpg": "/static/media/movie.8bc40249.jpg",
+    "static/media/pomadeshop_logo.png": "/static/media/pomadeshop_logo.9eba3452.png",
+    "static/media/schwarzkopf.svg": "/static/media/schwarzkopf.b91d8604.svg",
+    "static/media/sh.png": "/static/media/sh.2372a1c8.png",
+    "static/media/team.jpg": "/static/media/team.228a634d.jpg",
+    "static/media/varina.jpg": "/static/media/varina.867606f2.jpg",
+    "static/media/wanda.jpg": "/static/media/wanda.9b19b891.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e0778bc8.js",
+    "static/css/2.9522b9fe.chunk.css",
+    "static/js/2.1e492332.chunk.js",
+    "static/css/main.bc9e1f85.chunk.css",
+    "static/js/main.11af40f7.chunk.js"
+  ]
+}
