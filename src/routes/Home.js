@@ -37,8 +37,8 @@ class Home extends Component {
             <table>
               <tbody>
                 <tr>
-                  <th style={{ textAlign: "left" }}>Franzi:</th>
-                  <td>1.4. - 31.9.2021</td>
+                  <th style={{ textAlign: "left" }}>Betriebsferien:</th>
+                  <td>17.7. - 30.7.2023</td>
                 </tr>
                 {/* <tr>
                   <th style={{ textAlign: "left" }}>Varina:</th>
